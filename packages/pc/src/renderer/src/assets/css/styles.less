@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  user-select: none;
+  --menu-width: 60px;
+  --sidebar-width: 250px;
+  --left-width: calc(var(--menu-width) + var(--sidebar-width));
+  --header-height: 30px;
+  --main-width: 100vw;
+  --main-height: 100vh;
+  --page-height: calc(var(--main-height) - var(--header-height));
+  width: 100vw;
+  height: var(--main-height);
+  overflow: hidden;
+}
+
+#app {
+  width: var(--main-width);
+  height: var(--main-height);
+  overflow: hidden;
+}
+
+.drag {
+  -webkit-app-region: drag;
+}
+.no-drag {
+  -webkit-app-region: no-drag;
+}

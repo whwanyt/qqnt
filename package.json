@@ -1,0 +1,14 @@
+{
+  "name": "qqnt",
+  "private": true,
+  "scripts": {
+    "pc:dev": "lerna run --scope @qqnt/pc dev",
+    "tookit:build": "lerna run --scope @qqnt/tookit build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^7.1.1",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9"
+  }
+}
